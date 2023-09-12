@@ -1,0 +1,16 @@
+<html>
+<body>
+<h3>Enter the radius of your circle</h2>
+<input type="text" id="txtRadius" />
+<input type="button" value = "calculate" onClick= CalculateAreaperi() />
+<script>
+  function CalculateAreaperi(){
+      var radius = document.getElementById('txtRadius').value;
+      
+      document.write("the area of the circle is "+(radius*radius*Math.PI));
+     
+      document.write("<br/>the perimeter of the circle is "+(radius*2*Math.PI));
+   }
+</script>
+</body>
+</html>
