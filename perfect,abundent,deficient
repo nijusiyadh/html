@@ -1,0 +1,32 @@
+<html>
+<body>
+<h3>Enter the value</h2>
+<input type="text" id="num" />
+<input type="button" value = "submit" onClick= Find() />
+<script>
+  function Find(){
+    var n = document.getElementById('num').value;
+    var sum = 0;
+    for(let i=0;i<n;i++)
+    {
+        if(n%i==0)
+         {
+            sum = sum +i;
+          }
+    }
+   if(sum == n)
+    {
+      alert("The number is Perfect");
+    }
+   else if(sum>n)
+    {
+      alert("The number is Abundent");
+    }
+   else 
+    {
+      alert("The number is Deficient");
+    }
+  } 
+</script>
+</body>
+</html>
