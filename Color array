@@ -1,0 +1,13 @@
+<html>
+<body>
+<h2>Click to change Color</h2>
+<input type="button" value = "click" onClick= color() />
+<script>
+  var Ncolor = ["Blue","Green","Red","Yellow","Orange","Indigo"];
+  function color(){
+       const random = Math.floor(Math.random()* Ncolor.length);
+       document.body.style.background = Ncolor[random];
+  }
+</script>
+</body>
+</html>
